@@ -1,4 +1,5 @@
 import React from 'react';
+import { OnTheWebItem } from '../';
 
 export const OnTheWeb = () => {
     return (
@@ -6,18 +7,22 @@ export const OnTheWeb = () => {
             <h2>On the web</h2>
             <ul>
                 <li>
-                    <a
-                        href="https://github.com/mcalthrop/cv#readme"
-                        target="_blank">Source code to my online CV</a>
+                    <OnTheWebItem
+                        link="https://github.com/mcalthrop/cv#readme"
+                        title="Source code to my online CV"
+                    />
                 </li>
                 <li>
-                    <a
-                        href="https://github.com/mcalthrop/auth-mongo-express-node#readme" target="_blank">Express server with MongoDB and authentication</a>
+                    <OnTheWebItem
+                        link="https://github.com/mcalthrop/auth-mongo-express-node#readme"
+                        title="Express server with MongoDB and authentication"
+                    />
                 </li>
                 <li>
-                    <a
-                        href="https://github.com/mcalthrop/tdd-fibonacci#readme"
-                        target="_blank">TDD implementation of JavaScript Fibonacci series function</a>
+                    <OnTheWebItem
+                        link="https://github.com/mcalthrop/tdd-fibonacci#readme"
+                        title="TDD implementation of JavaScript Fibonacci series function"
+                    />
                 </li>
             </ul>
         </section>
