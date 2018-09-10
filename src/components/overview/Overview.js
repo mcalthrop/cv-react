@@ -13,5 +13,5 @@ export const Overview = ({ paragraphs }) => {
 };
 
 Overview.propTypes = {
-    paragraphs: PropTypes.array.isRequired,
+    paragraphs: PropTypes.arrayOf(PropTypes.string).isRequired,
 };

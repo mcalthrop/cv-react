@@ -13,5 +13,5 @@ export const Education = ({ paragraphs }) => {
 };
 
 Education.propTypes = {
-    paragraphs: PropTypes.array.isRequired,
+    paragraphs: PropTypes.arrayOf(PropTypes.string).isRequired,
 };

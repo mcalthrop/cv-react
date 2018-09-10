@@ -4,6 +4,7 @@ import { OnTheWebItem, OnTheWebItemShape } from './on-the-web-item';
 import { OtherInterests } from './other-interests';
 import { Overview } from './overview';
 import { WorkHistory } from './work-history';
+import { WorkHistoryItem } from './work-history-item';
 
 export {
     Education,
@@ -13,4 +14,5 @@ export {
     OtherInterests,
     Overview,
     WorkHistory,
+    WorkHistoryItem,
 };

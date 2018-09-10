@@ -13,5 +13,5 @@ export const OtherInterests = ({ paragraphs }) => {
 };
 
 OtherInterests.propTypes = {
-    paragraphs: PropTypes.array.isRequired,
+    paragraphs: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
