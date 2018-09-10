@@ -1,11 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export const Overview = () => {
+export const Overview = ({ paragraphs }) => {
     return (
         <section>
             <h2>Overview</h2>
-            <p>Matt Calthrop is a highly experienced full-stack software engineer and trainer with 25 years' experience in software analysis, development and systems integration.</p>
-            <p>With an aptitude for teaching and mentoring, Matt's professional and conscientious approach ensures timely product delivery.</p>
+            {paragraphs.map((paragraph) => <p>{paragraph}</p>)}
         </section>
     );
+};
+
+Overview.propTypes = {
+    paragraphs: PropTypes.array.isRequired,
 };
