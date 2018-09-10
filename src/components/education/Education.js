@@ -1,13 +1,17 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export const Education = () => {
+export const Education = ({ paragraphs }) => {
     return (
         <section>
             <h2>Education</h2>
             <section>
-                <p>1992: Australian National University, Canberra, Australia – Bachelor of Computer Science</p>
-                <p>1986: Christ Church Grammar School, Perth, Australia – TEE score of 402/510</p>
+                {paragraphs.map((paragraph) => <p>{paragraph}</p>)}
             </section>
         </section>
     );
+};
+
+Education.propTypes = {
+    paragraphs: PropTypes.array.isRequired,
 };

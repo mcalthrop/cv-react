@@ -8,12 +8,18 @@ const data = {
             'With an aptitude for teaching and mentoring, Matt\'s professional and conscientious approach ensures timely product delivery.',
         ]
     },
+    education: {
+        paragraphs: [
+            '1992: Australian National University, Canberra, Australia &ndash Bachelor of Computer Science',
+            '1986: Christ Church Grammar School, Perth, Australia – TEE score of 402/510',
+        ]
+    },
     otherInterests: {
         paragraphs: [
             'I have invested in various charitable causes, including building a primary school in Nicaragua, financially supporting a family in Uganda who fosters AIDS orphans, and being involved locally in the distribution of food and basics.',
             'Additionally, I love spending time with my family, in the outdoors, mountain biking and running.',
         ]
-    }
+    },
 }
 export class CvContainer extends Component {
     render() {
@@ -23,7 +29,7 @@ export class CvContainer extends Component {
                 <Overview paragraphs={data.overview.paragraphs} />
                 <OnTheWeb />
                 <WorkHistory />
-                <Education />
+                <Education paragraphs={data.education.paragraphs} />
                 <OtherInterests paragraphs={data.otherInterests.paragraphs} />
             </header>
         );
