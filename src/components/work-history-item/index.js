@@ -1,3 +1,3 @@
-import { WorkHistoryItem } from './workHistoryItem';
+import { WorkHistoryItem } from './WorkHistoryItem';
 
 export { WorkHistoryItem };
