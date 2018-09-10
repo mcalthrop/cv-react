@@ -6,7 +6,7 @@ export const OtherInterests = ({ paragraphs }) => {
         <section>
             <h2>Other interests</h2>
             <section>
-                {paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+                {paragraphs.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
             </section>
         </section>
     );

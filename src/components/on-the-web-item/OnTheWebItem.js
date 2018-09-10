@@ -1,15 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const OnTheWebItem = ({ link, title }) => {
+export const OnTheWebItemShape = PropTypes.shape({
+    link: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+});
+
+export const OnTheWebItem = ({ item }) => {
     return (
         <a
-            href={link}
-            target="_blank">{title}</a>
+            href={item.link}
+            target="_blank">{item.title}</a>
     );
 };
 
 OnTheWebItem.propTypes = {
-    link: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
+    item: OnTheWebItemShape,
 };

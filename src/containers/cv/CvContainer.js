@@ -8,6 +8,22 @@ const data = {
             'With an aptitude for teaching and mentoring, Matt\'s professional and conscientious approach ensures timely product delivery.',
         ]
     },
+    onTheWeb: {
+        items: [
+            {
+                link: 'https://github.com/mcalthrop/cv#readme',
+                title: 'Source code to my online CV',
+            },
+            {
+                link: 'https://github.com/mcalthrop/auth-mongo-express-node#readme',
+                title: 'Express server with MongoDB and authentication',
+            },
+            {
+                link: 'https://github.com/mcalthrop/tdd-fibonacci#readme',
+                title: 'TDD implementation of JavaScript Fibonacci series function',
+            },
+        ]
+    },
     education: {
         paragraphs: [
             '1992: Australian National University, Canberra, Australia &ndash Bachelor of Computer Science',
@@ -27,7 +43,7 @@ export class CvContainer extends Component {
             <header>
                 <h1>CV: Matt Calthrop</h1>
                 <Overview paragraphs={data.overview.paragraphs} />
-                <OnTheWeb />
+                <OnTheWeb items={data.onTheWeb.items} />
                 <WorkHistory />
                 <Education paragraphs={data.education.paragraphs} />
                 <OtherInterests paragraphs={data.otherInterests.paragraphs} />

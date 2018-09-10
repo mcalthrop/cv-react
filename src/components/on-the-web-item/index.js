@@ -1,3 +1,3 @@
-import { OnTheWebItem } from './OnTheWebItem';
+import { OnTheWebItem, OnTheWebItemShape } from './OnTheWebItem';
 
-export { OnTheWebItem };
+export { OnTheWebItem, OnTheWebItemShape };
