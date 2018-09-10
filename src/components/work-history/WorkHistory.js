@@ -6,7 +6,7 @@ export const WorkHistory = ({ items }) => {
     return (
         <section>
             <h2>Work history</h2>
-            {items.map((item, index) => <WorkHistoryItem key={index} item={item} />)}
+            <ul>{items.map((item, index) => <li key={index}><WorkHistoryItem item={item} /></li>)}</ul>
         </section>
     );
 };
