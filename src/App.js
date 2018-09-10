@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
+import { CvContainer } from './containers/cv';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header>
-          <h1>CV: Matt Calthrop</h1>
-        </header>
+        <CvContainer></CvContainer>
       </div>
     );
   }
