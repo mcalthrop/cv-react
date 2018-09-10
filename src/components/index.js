@@ -1,3 +1,4 @@
+import { CompanyLink } from './company-link';
 import { Education } from './education';
 import { OnTheWeb } from './on-the-web';
 import { OnTheWebItem, OnTheWebItemShape } from './on-the-web-item';
@@ -7,6 +8,7 @@ import { WorkHistory } from './work-history';
 import { WorkHistoryItem } from './work-history-item';
 
 export {
+    CompanyLink,
     Education,
     OnTheWeb,
     OnTheWebItem,

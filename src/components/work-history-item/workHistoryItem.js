@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { CompanyLink } from '../';
 
 export const WorkHistoryItemShape = PropTypes.shape({
     company: PropTypes.object.isRequired,
@@ -13,7 +14,7 @@ export const WorkHistoryItemShape = PropTypes.shape({
 export const WorkHistoryItem = ({ item }) => {
     return (
         <section>
-            <section><a href={item.company.link} target="_blank">{item.company.title}</a></section>
+            <section><CompanyLink company={item.company}/></section>
             <section>{item.jobTitle}</section>
             <section>{item.location} • {item.duration.start}-{item.duration.finish}</section>
             <section>

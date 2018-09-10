@@ -98,6 +98,31 @@ const data = {
                     'Travis',
                 ],
             },
+            {
+                company: {
+                    title: 't5media',
+                },
+                jobTitle: 'Systems Engineer',
+                location: 'St Albans, UK',
+                duration: {
+                    start: '2002',
+                    finish: '2007',
+                },
+                paragraphs: [
+                    'Project manager, systems engineer, and website developer building websites for SMEs.',
+                    'Managed LAMP stack hosting of all websites, including Bash script automation of website creation and backups.',
+                    'Requirements analysis and specification, project management, hosting configuration, implementation and support.',
+                ],
+                skills: [
+                    'Full software lifecycle',
+                    'Systems integration',
+                    'LAMP implementation',
+                    'HTML',
+                    'CSS',
+                    'JavaScript',
+                    'Client liaison and support',
+                ],
+            },
         ],
     },
     education: {
