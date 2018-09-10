@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Education, Overview, OnTheWeb, WorkHistory } from '../../components';
+import { Education, OnTheWeb, OtherInterests, Overview, WorkHistory } from '../../components';
 
 export class CvContainer extends Component {
     render() {
@@ -10,6 +10,7 @@ export class CvContainer extends Component {
                 <OnTheWeb></OnTheWeb>
                 <WorkHistory></WorkHistory>
                 <Education></Education>
+                <OtherInterests></OtherInterests>
             </header>
         );
     }
