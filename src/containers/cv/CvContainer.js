@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Overview, OnTheWeb } from '../../components';
+import { Overview, OnTheWeb, WorkHistory } from '../../components';
 
 export class CvContainer extends Component {
     render() {
@@ -8,6 +8,7 @@ export class CvContainer extends Component {
                 <h1>CV: Matt Calthrop</h1>
                 <Overview></Overview>
                 <OnTheWeb></OnTheWeb>
+                <WorkHistory></WorkHistory>
             </header>
         );
     }
