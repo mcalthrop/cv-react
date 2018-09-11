@@ -34,7 +34,7 @@ export class CvContainer extends Component {
         return (
             <header>
                 <h1>CV: Matt Calthrop</h1>
-                {data &&
+                {data ?
                     <div>
                         <Overview paragraphs={data.overview.paragraphs} />
                         <OnTheWeb items={data.onTheWeb.items} />
@@ -42,7 +42,7 @@ export class CvContainer extends Component {
                         <Education paragraphs={data.education.paragraphs} />
                         <OtherInterests paragraphs={data.otherInterests.paragraphs} />
                     </div>
-                    ||
+                    :
                     <div>
                         <p>Loading...</p>
                     </div>
