@@ -5,9 +5,7 @@ import { CvContainer } from './containers/cv';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <CvContainer></CvContainer>
-      </div>
+      <CvContainer></CvContainer>
     );
   }
 }
