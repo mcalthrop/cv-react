@@ -128,7 +128,7 @@ const data = {
     },
     education: {
         paragraphs: [
-            '1992: Australian National University, Canberra, Australia &ndash; Bachelor of Computer Science',
+            '1992: Australian National University, Canberra, Australia – Bachelor of Computer Science',
             '1986: Christ Church Grammar School, Perth, Australia – TEE score of 402/510',
         ],
     },
