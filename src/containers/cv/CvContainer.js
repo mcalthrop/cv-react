@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import Container from 'muicss/lib/react/container';
+import Row from 'muicss/lib/react/row';
+import Divider from 'muicss/lib/react/divider';
 import { Education, OnTheWeb, OtherInterests, Overview, WorkHistory } from '../../components';
 import { DataTransformation } from '../../utils/DataTransformation';
 import * as contentful from 'contentful';
@@ -32,14 +35,28 @@ export class CvContainer extends Component {
         const { data } = this.state;
         console.log('render(): this.state:', this.state);
         return (
-            <header>
-                <h1>CV: Matt Calthrop</h1>
+            <Container>
+                <Row>
+                    <h1>CV: Matt Calthrop</h1>
+                </Row>
                 {data ?
                     <div>
                         <Overview paragraphs={data.overview.paragraphs} />
+                        <Row>
+                            <Divider />
+                        </Row>
                         <OnTheWeb items={data.onTheWeb.items} />
+                        <Row>
+                            <Divider />
+                        </Row>
                         <WorkHistory items={data.workHistory.items} />
+                        <Row>
+                            <Divider />
+                        </Row>
                         <Education paragraphs={data.education.paragraphs} />
+                        <Row>
+                            <Divider />
+                        </Row>
                         <OtherInterests paragraphs={data.otherInterests.paragraphs} />
                     </div>
                     :
@@ -47,7 +64,7 @@ export class CvContainer extends Component {
                         <p>Loading...</p>
                     </div>
                 }
-            </header>
+            </Container>
         );
     }
 }

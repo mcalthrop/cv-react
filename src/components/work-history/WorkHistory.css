@@ -1,0 +1,6 @@
+ul.workHistory {
+    padding-left: 0;
+}
+li.workHistoryItem {
+    list-style-type: none;
+}

@@ -15,14 +15,14 @@ export const WorkHistoryItem = ({ item }) => {
     return (
         <section>
             <section><CompanyLink company={item.company}/></section>
-            <section>{item.jobTitle}</section>
+            <section><strong>{item.jobTitle}</strong></section>
             <section>{item.location} • {item.duration.start}-{item.duration.finish}</section>
             <section>
-                {item.paragraphs.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
+                {item.paragraphs.map((paragraph, index) => <p key={index} className="mui--text-dark-secondary">{paragraph}</p>)}
             </section>
             {item.skills &&
                 <section>
-                    <ul>
+                    <ul className="mui--text-dark-hint">
                         {item.skills.map((paragraph, index) => <li key={index}>{paragraph}</li>)}
                     </ul>
                 </section>
