@@ -1,5 +1,7 @@
 ul.skills {
     padding-left: 0;
+    line-height: 110%;
+    margin-top: 4px;
 }
 
 .skills li {
