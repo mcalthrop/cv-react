@@ -42,21 +42,13 @@ export class CvContainer extends Component {
                 {data ?
                     <div>
                         <Overview paragraphs={data.overview.paragraphs} />
-                        <Row>
-                            <Divider />
-                        </Row>
+                        <Row><Divider /></Row>
                         <OnTheWeb items={data.onTheWeb.items} />
-                        <Row>
-                            <Divider />
-                        </Row>
+                        <Row><Divider /></Row>
                         <WorkHistory items={data.workHistory.items} />
-                        <Row>
-                            <Divider />
-                        </Row>
+                        <Row><Divider /></Row>
                         <Education paragraphs={data.education.paragraphs} />
-                        <Row>
-                            <Divider />
-                        </Row>
+                        <Row><Divider /></Row>
                         <OtherInterests paragraphs={data.otherInterests.paragraphs} />
                     </div>
                     :
