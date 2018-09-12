@@ -10,9 +10,7 @@ export const WorkHistory = ({ items }) => {
             <Row>
                 <h2>Work history</h2>
             </Row>
-            <Row>
-                <ul className="workHistory">{items.map((item, index) => <li key={index} className="workHistoryItem"><WorkHistoryItem item={item} /></li>)}</ul>
-            </Row>
+            <ul className="workHistory">{items.map((item, index) => <li key={index} className="workHistoryItem"><WorkHistoryItem item={item} /></li>)}</ul>
         </section>
     );
 };

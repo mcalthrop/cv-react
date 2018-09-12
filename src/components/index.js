@@ -4,6 +4,7 @@ import { OnTheWeb } from './on-the-web';
 import { OnTheWebItem, OnTheWebItemShape } from './on-the-web-item';
 import { OtherInterests } from './other-interests';
 import { Overview } from './overview';
+import { Skills } from './skills';
 import { WorkHistory } from './work-history';
 import { WorkHistoryItem } from './work-history-item';
 
@@ -15,6 +16,7 @@ export {
     OnTheWebItemShape,
     OtherInterests,
     Overview,
+    Skills,
     WorkHistory,
     WorkHistoryItem,
 };

@@ -3,4 +3,6 @@ ul.onTheWeb {
 }
 li.onTheWebItem {
     list-style-type: none;
+    margin: 10px 0;
+    line-height: 100%;
 }

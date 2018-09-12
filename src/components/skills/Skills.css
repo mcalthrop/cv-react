@@ -1,0 +1,15 @@
+ul.skills {
+    padding-left: 0;
+}
+
+.skills li {
+    display: inline;
+}
+
+.skills li:after {
+    content: " \00b7 ";
+}
+
+.skills li:last-child:after {
+    content: none;
+}
