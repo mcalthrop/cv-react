@@ -33,7 +33,7 @@ export class CvContainer extends Component {
 
     render() {
         const { data } = this.state;
-        console.log('render(): this.state:', this.state);
+
         return (
             <Container>
                 <Row>
