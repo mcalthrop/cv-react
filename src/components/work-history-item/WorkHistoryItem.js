@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Row from 'muicss/lib/react/row';
 import './WorkHistoryItem.css';
-import { CompanyLink, Skills } from '../';
+import { CompanyLink, FullWidthRow, Skills } from '../';
 
 export const WorkHistoryItemShape = PropTypes.shape({
     company: PropTypes.object.isRequired,
@@ -16,15 +15,15 @@ export const WorkHistoryItemShape = PropTypes.shape({
 export const WorkHistoryItem = ({ item }) => {
     return (
         <section>
-            <Row><CompanyLink company={item.company}/></Row>
-            <Row><strong>{item.jobTitle}</strong></Row>
-            <Row>{item.location} • {item.duration.start}-{item.duration.finish}</Row>
-            <Row>
+            <FullWidthRow><CompanyLink company={item.company}/></FullWidthRow>
+            <FullWidthRow><strong>{item.jobTitle}</strong></FullWidthRow>
+            <FullWidthRow>{item.location} • {item.duration.start}-{item.duration.finish}</FullWidthRow>
+            <FullWidthRow>
                 {item.paragraphs.map((paragraph, index) => <p key={index} className="mui--text-dark-secondary workHistoryItem">{paragraph}</p>)}
-            </Row>
-            <Row>
+            </FullWidthRow>
+            <FullWidthRow>
                 <Skills items={item.skills} />
-            </Row>
+            </FullWidthRow>
         </section>
     );
 };

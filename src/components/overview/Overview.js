@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Row from 'muicss/lib/react/row';
+import { FullWidthRow } from '..';
 
 export const Overview = ({ paragraphs }) => {
     return (
         <section>
-            <Row>
+            <FullWidthRow>
                 <h2>Overview</h2>
-            </Row>
-            <Row>
+            </FullWidthRow>
+            <FullWidthRow>
                 {paragraphs.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
-            </Row>
+            </FullWidthRow>
         </section>
     );
 };

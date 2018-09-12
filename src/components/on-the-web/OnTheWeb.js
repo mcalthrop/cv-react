@@ -1,20 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Row from 'muicss/lib/react/row';
 import './OnTheWeb.css';
-import { OnTheWebItem } from '../';
+import { FullWidthRow, OnTheWebItem } from '../';
 
 export const OnTheWeb = ({ items }) => {
     return (
         <section>
-            <Row>
+            <FullWidthRow>
                 <h2>On the web</h2>
-            </Row>
-            <Row>
+            </FullWidthRow>
+            <FullWidthRow>
                 <ul className="onTheWeb">
                     {items.map((item, index) => <li key={index} className="onTheWebItem"><OnTheWebItem item={item} /></li>)}
                 </ul>
-            </Row>
+            </FullWidthRow>
         </section>
     );
 };

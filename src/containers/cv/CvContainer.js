@@ -1,8 +1,17 @@
 import React, { Component } from 'react';
 import Container from 'muicss/lib/react/container';
 import Row from 'muicss/lib/react/row';
+import Col from 'muicss/lib/react/col';
 import Divider from 'muicss/lib/react/divider';
-import { Education, OnTheWeb, OtherInterests, Overview, WorkHistory } from '../../components';
+import {
+    DividerRow,
+    Education,
+    FullWidthRow,
+    OnTheWeb,
+    OtherInterests,
+    Overview,
+    WorkHistory,
+} from '../../components';
 import { DataTransformation } from '../../utils/DataTransformation';
 import * as contentful from 'contentful';
 
@@ -36,19 +45,19 @@ export class CvContainer extends Component {
 
         return (
             <Container>
-                <Row>
+                <Row><Col md="12">
                     <h1>CV: Matt Calthrop</h1>
-                </Row>
+                </Col></Row>
                 {data ?
                     <div>
                         <Overview paragraphs={data.overview.paragraphs} />
-                        <Row><Divider /></Row>
+                        <DividerRow />
                         <OnTheWeb items={data.onTheWeb.items} />
-                        <Row><Divider /></Row>
+                        <DividerRow />
                         <WorkHistory items={data.workHistory.items} />
-                        <Row><Divider /></Row>
+                        <DividerRow />
                         <Education paragraphs={data.education.paragraphs} />
-                        <Row><Divider /></Row>
+                        <DividerRow />
                         <OtherInterests paragraphs={data.otherInterests.paragraphs} />
                     </div>
                     :
