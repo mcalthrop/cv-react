@@ -13,6 +13,7 @@ It uses the following features:
 - [Contentful](https://www.contentful.com/) for hosting the content
 - [Yarn](https://yarnpkg.com/en/) for dependency management
 - [Prettier](https://prettier.io/) for code formatting
+- [Husky](https://github.com/typicode/husky) for git commit hooks
 - [Heroku](https://www.heroku.com/) for deployment and hosting
 
 You can fork this repo, and run it locally yourself. Following are instructions for setting it up and running it.
