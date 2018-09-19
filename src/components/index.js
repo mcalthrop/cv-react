@@ -11,16 +11,16 @@ import { WorkHistory } from './work-history';
 import { WorkHistoryItem } from './work-history-item';
 
 export {
-    CompanyLink,
-    DividerRow,
-    Education,
-    FullWidthRow,
-    OnTheWeb,
-    OnTheWebItem,
-    OnTheWebItemShape,
-    OtherInterests,
-    Overview,
-    Skills,
-    WorkHistory,
-    WorkHistoryItem,
+  CompanyLink,
+  DividerRow,
+  Education,
+  FullWidthRow,
+  OnTheWeb,
+  OnTheWebItem,
+  OnTheWebItemShape,
+  OtherInterests,
+  Overview,
+  Skills,
+  WorkHistory,
+  WorkHistoryItem,
 };
