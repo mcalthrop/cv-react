@@ -12,12 +12,12 @@
   "scripts": {
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "lint": "prettier src/**/*.js",
-    "prettier": "yarn lint --list-different",
-    "prettier:fix": "yarn lint --write",
+    "prettier": "prettier src/**/*.js",
+    "prettier:check": "yarn prettier --list-different",
+    "prettier:fix": "yarn prettier --write",
     "help": "react-scripts --version",
     "start": "react-scripts start",
-    "test": "yarn prettier && CI=true react-scripts test --env=jsdom",
+    "test": "yarn prettier:check && CI=true react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom"
   },
   "devDependencies": {
