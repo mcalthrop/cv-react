@@ -2,11 +2,9 @@ import React, { Component } from 'react';
 import Container from 'muicss/lib/react/container';
 import Row from 'muicss/lib/react/row';
 import Col from 'muicss/lib/react/col';
-import Divider from 'muicss/lib/react/divider';
 import {
     DividerRow,
     Education,
-    FullWidthRow,
     OnTheWeb,
     OtherInterests,
     Overview,
