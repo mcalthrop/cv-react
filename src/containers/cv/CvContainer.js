@@ -5,6 +5,7 @@ import Col from 'muicss/lib/react/col';
 import {
     DividerRow,
     Education,
+    Footer,
     OnTheWeb,
     OtherInterests,
     Overview,
@@ -63,6 +64,7 @@ export class CvContainer extends Component {
                         <p>Loading...</p>
                     </div>
                 }
+                <Footer />
             </Container>
         );
     }

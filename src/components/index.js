@@ -1,6 +1,7 @@
 import { CompanyLink } from './company-link';
 import { DividerRow } from './divider-row';
 import { Education } from './education';
+import { Footer } from './footer';
 import { FullWidthRow } from './full-width-row';
 import { OnTheWeb } from './on-the-web';
 import { OnTheWebItem, OnTheWebItemShape } from './on-the-web-item';
@@ -14,6 +15,7 @@ export {
   CompanyLink,
   DividerRow,
   Education,
+  Footer,
   FullWidthRow,
   OnTheWeb,
   OnTheWebItem,
