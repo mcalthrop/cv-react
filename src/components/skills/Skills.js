@@ -7,7 +7,7 @@ export const Skills = ({ items }) => {
         const skills = {__html: items.join(' &bull; ')};
 
         return (
-            <div className="mui--text-dark-hint skills" dangerouslySetInnerHTML={skills}></div>
+            <p className="mui--text-dark-hint skills" dangerouslySetInnerHTML={skills}></p>
         );
     }
 

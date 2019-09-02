@@ -1,18 +1,3 @@
-ul.skills {
-    padding-left: 0;
-    line-height: 110%;
-    margin: 4px 0;
-}
-
-.skills li {
+.skills {
     font-size: 12px;
-    display: inline;
-}
-
-.skills li:after {
-    content: " \00b7 ";
-}
-
-.skills li:last-child:after {
-    content: none;
 }
