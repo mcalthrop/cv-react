@@ -14,7 +14,7 @@ import {
 import { DataTransformation } from '../../utils/DataTransformation';
 import * as contentful from 'contentful';
 
-const space = '8nmbnmef5jq7';
+const space='8nmbnmef5jq7';
 const accessToken = '2b0af88ae087bef7c88668c9a00cd778656e22d726598b797a246415c9176eaf';
 
 export class CvContainer extends Component {
