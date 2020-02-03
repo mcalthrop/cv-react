@@ -1,13 +1,14 @@
 .overview {
     margin-top: 12px;
     display: flex;
-    max-width: 480px;
+    max-width: 520px;
 }
 
 .overview .image {
     object-fit: contain;
     align-self: flex-start;
     margin-right: 10px;
+    vertical-align: middle;
 }
 
 .overview .paragraphs {
