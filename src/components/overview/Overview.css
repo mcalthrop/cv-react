@@ -1,0 +1,15 @@
+.overview {
+    margin-top: 12px;
+    display: flex;
+    max-width: 480px;
+}
+
+.overview .image {
+    object-fit: contain;
+    align-self: flex-start;
+    margin-right: 10px;
+}
+
+.overview .paragraphs {
+    flex: 1 1 auto;
+}

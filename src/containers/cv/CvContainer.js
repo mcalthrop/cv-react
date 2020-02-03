@@ -49,8 +49,10 @@ export class CvContainer extends Component {
                 </Col></Row>
                 {data ?
                     <div>
-                        <Overview paragraphs={data.overview.paragraphs} />
-                        <DividerRow />
+                        <Overview
+                            paragraphs={data.overview.paragraphs}
+                            image={data.image}
+                        />
                         <OnTheWeb items={data.onTheWeb.items} />
                         <DividerRow />
                         <WorkHistory items={data.workHistory.items} />

@@ -1,20 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FullWidthRow } from '..';
+import './Overview.css';
 
-export const Overview = ({ paragraphs }) => {
+export const Overview = ({ paragraphs, image }) => {
     return (
-        <section>
-            <FullWidthRow>
-                <h2>Overview</h2>
-            </FullWidthRow>
-            <FullWidthRow>
+        <section className="overview">
+            <span className="image">
+                <img src={image.url} alt="Matt Calthrop" width="100" />
+            </span>
+            <span className="paragraphs">
                 {paragraphs.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
-            </FullWidthRow>
+            </span>
         </section>
     );
 };
 
 Overview.propTypes = {
     paragraphs: PropTypes.arrayOf(PropTypes.string).isRequired,
+    image: PropTypes.object.isRequired,
 };

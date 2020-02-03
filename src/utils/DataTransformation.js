@@ -1,4 +1,14 @@
 export class DataTransformation {
+  static transformImage(imageRawData) {
+    const image = {
+      width: imageRawData.fields.file.details.image.width,
+      height: imageRawData.fields.file.details.image.height,
+      url: imageRawData.fields.file.url,
+    };
+
+    return image;
+  }
+
   static transformOverview(overviewRawData) {
     const paragraphs = overviewRawData.map((datum) => {
       return datum.fields.para;
@@ -60,16 +70,20 @@ export class DataTransformation {
 
   static transformCv(rawData) {
     const fields = rawData.items[0].fields;
-    const overview = DataTransformation.transformOverview(fields.overview);
-    const onTheWeb = DataTransformation.transformOnTheWeb(fields.onTheWeb);
-    const workHistory = DataTransformation.transformWorkHistory(
-      fields.workHistory
-    );
-    const education = DataTransformation.transformEducation(fields.education);
-    const otherInterests = DataTransformation.transformInterests(
-      fields.interests
-    );
+    const image = this.transformImage(fields.image);
+    const overview = this.transformOverview(fields.overview);
+    const onTheWeb = this.transformOnTheWeb(fields.onTheWeb);
+    const workHistory = this.transformWorkHistory(fields.workHistory);
+    const education = this.transformEducation(fields.education);
+    const otherInterests = this.transformInterests(fields.interests);
 
-    return { overview, onTheWeb, workHistory, education, otherInterests };
+    return {
+      image,
+      overview,
+      onTheWeb,
+      workHistory,
+      education,
+      otherInterests,
+    };
   }
 }
