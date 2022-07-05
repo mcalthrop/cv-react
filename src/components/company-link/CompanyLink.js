@@ -26,7 +26,7 @@ export const CompanyLink = ({ company, viaCompany }) => {
         }
 
         return <span> via {markup}</span>;
-    }, []);
+    }, [viaCompany]);
 
     if (company.link) {
         return <h3><a href={company.link} target="_blank">{company.title}</a>{viaCompanyMarkup}</h3>;
