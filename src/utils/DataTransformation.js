@@ -35,6 +35,10 @@ export class DataTransformation {
         title: fields.employerName,
         link: fields.employerUrl,
       };
+      const viaCompany = {
+        title: fields.viaEmployerName,
+        link: fields.viaEmployerUrl,
+      };
       const jobTitle = fields.roleTitle;
       const location = fields.location;
       const duration = {
@@ -46,7 +50,15 @@ export class DataTransformation {
       });
       const skills = fields.skillSummary;
 
-      return { company, jobTitle, location, duration, paragraphs, skills };
+      return {
+        company,
+        viaCompany,
+        jobTitle,
+        location,
+        duration,
+        paragraphs,
+        skills,
+      };
     });
 
     return { items };
