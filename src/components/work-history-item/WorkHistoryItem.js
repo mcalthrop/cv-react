@@ -5,6 +5,7 @@ import { CompanyLink, FullWidthRow, Skills } from '../';
 
 export const WorkHistoryItemShape = PropTypes.shape({
     company: PropTypes.object.isRequired,
+    viaCompany: PropTypes.object,
     jobTitle: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,
     duration: PropTypes.object.isRequired,
@@ -15,7 +16,7 @@ export const WorkHistoryItemShape = PropTypes.shape({
 export const WorkHistoryItem = ({ item }) => {
     return (
         <section>
-            <FullWidthRow><CompanyLink company={item.company}/></FullWidthRow>
+            <FullWidthRow><CompanyLink company={item.company} viaCompany={item.viaCompany}/></FullWidthRow>
             <FullWidthRow><strong>{item.jobTitle}</strong></FullWidthRow>
             <FullWidthRow>{item.location} • {item.duration.start}-{item.duration.finish}</FullWidthRow>
             <FullWidthRow>
